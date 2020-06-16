@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
+        ("home", "0002_load_initial_data"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='homepage',
-            name='test_commit',
+            model_name="homepage",
+            name="test_commit",
             field=models.CharField(blank=True, max_length=256, null=True),
         ),
     ]
