@@ -25,6 +25,7 @@ class HomePage(models.Model):
     body = models.TextField()
     test_commit = models.CharField(max_length=256, null=True, blank=True,)
     commit_2 = models.IntegerField(null=True, blank=True,)
+    commit_3 = models.DurationField(null=True, blank=True,)
 
     @property
     def api(self):
