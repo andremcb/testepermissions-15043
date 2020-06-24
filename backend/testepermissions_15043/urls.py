@@ -38,15 +38,13 @@ admin.site.site_title = "TestePermissions Admin Portal"
 admin.site.index_title = "TestePermissions Admin"
 
 # swagger
-openapi_info = (
-    openapi.Info(
-        title="TestePermissions API",
-        default_version="v1",
-        description="API documentation for TestePermissions App",
-    ),
+api_info = openapi.Info(
+    title="TestePermissions API",
+    default_version="v1",
+    description="API documentation for TestePermissions App",
 )
 schema_view = get_schema_view(
-    openapi_info, public=True, permission_classes=(permissions.IsAuthenticated,),
+    api_info, public=True, permission_classes=(permissions.IsAuthenticated,),
 )
 
 urlpatterns += [

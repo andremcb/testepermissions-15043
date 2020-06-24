@@ -190,7 +190,7 @@ EMAIL_USE_TLS = True
 FCM_DJANGO_SETTINGS = {"FCM_SERVER_KEY": env.str("FCM_SERVER_KEY", "")}
 # end fcm_django push notifications
 
-SWAGGER_SETTINGS = {"DEFAULT_INFO": "testepermissions_15043.urls.openapi_info"}
+SWAGGER_SETTINGS = {"DEFAULT_INFO": "testepermissions_15043.urls.api_info"}
 
 if DEBUG:
     # output email to console instead of sending
